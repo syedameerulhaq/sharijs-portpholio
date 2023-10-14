@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+#back{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color:black; */
+    /* opacity:50%; */
+
+}
+#workingArea{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+    color: white;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 30px;
+}
+#logo{
+    pointer-events: all;
+
+}
+#logo:hover{
+    transform: rotate(-5deg);
+    color: red;
+        pointer-events: all;
+
+}
+#leftNav,#rightNav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+
+#leftNav a,#rightNav a{
+    pointer-events: all;
+ text-decoration: none;
+ color: white;
+ font-family: 'gilroy';
+ font-size: 12px;
+ font-weight: 600;
+ text-transform: uppercase;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#hero{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    width: 100%;
+    margin: 30px 0;
+    
+}
+
+#back img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position:center;
+}
+
+
+#heroLeft{
+    min-width: 60%;
+}
+#heroLeft .elem {
+    overflow: hidden;
+    height: 9vw;
+    
+    }
+#heroLeft .elem h1{
+line-height:0.9;
+font-family: "Kajiro";
+color: white;
+font-size: 11vw;
+font-weight:100;
+
+}
+.btn{
+    pointer-events: all;
+    padding: .2vw 3vw;
+    font-size: 5vw;
+    margin-top: 3vw;
+    font-family: "Kajiro";
+    background-color: white;
+    font-weight:100;
+    pointer-events: all;
+
+}
+#heroRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 20%;
+    color: white;
+
+}
+#heroRight p{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+    margin: 19px 0;
+}
+#heroRight #imgDiv{
+    width: 100%;
+    height: 200px;
+    /* background-color: blue; */
+    margin-bottom: 40px;
+    background-image:url(aamir.png);
+    background-size:cover;
+    pointer-events: all;
+
+}
+
+#back{
+    pointer-events: all;
+
+}
+@media all and (max-width:600px) {
+    #hero{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: column-reverse;
+
+    }
+    #leftNav a,#rightNav a{
+        display:none;
+
+    }
+  
+    #heroRight p{
+        display: none;
+    }
+    #heroRight {
+        width: 100%;
+    }
+    #heroRight #imgDiv{
+        width: 200px;
+        height: 200px;
+        margin: auto;
+
+    }
+    #heroLeft{
+        width: 100%;
+        text-align: center;
+    }
+    #logo{
+        display: flex;
+        margin-left:100% ;
+    }
+}
+
